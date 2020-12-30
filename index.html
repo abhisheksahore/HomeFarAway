@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go to a home far away - HomeFarAway</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif|Pacifico|Ubuntu&display=swap" rel="stylesheet">
+    <!-- <link rel="icon" href="abhishek.jpg" type="image/gif"> -->
+</head>
+
+<body>
+
+    <!-- Header of the webpage: including logo, navbar, login buttons, social-icons. -->
+    <header>
+        <nav id="navbar">
+
+            <div id="logo">
+                <p><span>H</span>ome <span>F</span>ar <span>A</span>way
+                </p>
+            </div>
+            <div id="nav-menu">
+                <ul>
+                    <li>
+                        <a href="#">
+                            Host a Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Host an Experience
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Help
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div id="nav-right">
+                <div id="social-icons">
+                    <ul class="soc-icon">
+                        <li><a href="http://www.facebook.com/abhishek.sahore.92" target="_blank "><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#twitter"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://www.instagram.com/abhisheksahore7" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="#youtube"><i class="fa fa-youtube"></i></a></li>
+
+                    </ul>
+                </div>
+                <div id="logins">
+                    <ul class="btn btn-primary btn-login">
+                        <li><a href="#">Sign up</a></li>
+                        <li><a href="#">Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <!-- Flag Area: This section contains the booking and searching form. -->
+    <section id="home-form-section">
+        <div id="card">
+            <div id="form-heading">
+                <h1 class="heading">Book unique places to stay and things to do.</h1>
+            </div>
+            <div id="form-body">
+                <form>
+                    <div class="home-form">
+                        <div class="label">
+                            <label for="where">WHERE</label></div>
+                        <div class="input">
+                            <input type="text" name="where" id="where" placeholder="Anywhere">
+                        </div>
+                    </div>
+                    <div id="same-line-form">
+                        <div class="home-form">
+                            <div class="label">
+                                <label for="check-in">CHECK-IN</label></div>
+                            <div class="input">
+                                <input type="text" name="check-in" id="check-in" placeholder="dd/mm/yyyy" onfocus="(this.type='date')" onblur="(this.type='text')">
+                            </div>
+                        </div>
+                        <div class="home-form">
+                            <div class="label">
+                                <label for="check-out">CHECKOUT</label>
+                            </div>
+                            <div class="input">
+                                <input type="text" name="check-out" id="check-out" placeholder="dd/mm/yyyy" onfocus="(this.type='date')" onblur="(this.type='text')">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="home-form">
+                        <div class="label">
+                            <label for="guests">GUESTS</label>
+                        </div>
+                        <div class="input">
+                            <input type="text" name="guests" id="guests" placeholder="Guests">
+                        </div>
+                    </div>
+                    <div id="submit-button">
+                        <button type="submit">
+                            Search
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Exploration Area: This section contains the list of different Experiences that you can gain by going different places. -->
+    <section id="Explore-section">
+        <div id="explore-section-main-area">
+            <div id="explore-section-main-inner-area">
+                <div id="explore-section-heading">
+                    <p>Explore HomeFarAway</p>
+                </div>
+                <div id="explore-section-body">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <div class="explore-card">
+                                    <div class="explore-card-image"><img src="images/hotel-room.jpg" alt="Stay"></div>
+                                    <div class="explore-card-title">Stays</div>
+                                </div>
+                            </a>
+
+                        </li>
+                        <li>
+
+                            <a href="#">
+                                <div class="explore-card">
+                                    <div class="explore-card-image"><img src="images/hotel-kitchen.jpg" alt="Experience"></div>
+                                    <div class="explore-card-title">Experiences</div>
+                                </div>
+                            </a>
+
+                        </li>
+                        <li>
+
+                            <a href="#">
+                                <div class="explore-card">
+                                    <div class="explore-card-image"><img src="images/adventure.jpg" alt="Adventure"></div>
+                                    <div class="explore-card-title">Adventures</div>
+                                </div>
+                            </a>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Places-To-Stay: This section suggests you some of the different places that you can go around the world with us.  -->
+    <section id="places-to-stay">
+        <div id="places-to-stay-main">
+            <div id="places-to-stay-heading-main">
+                <div id="places-to-stay-heading-inside">
+                    <a href="#">
+                        <p>Places to stay around the world
+                            <!-- <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><i class="fa fa-chevron-right"></i> -->
+                        </p>
+                    </a>
+                </div>
+            </div>
+            <div id="places-to-stay-main-cards-area">
+                <div id="places-to-stay-inner-main-card-area">
+                    <div class="places-to-stay-inner-main-area-card">
+                        <a href="#">
+                            <div class="places-to-stay-cards-padding">
+                                <div class="places-to-stay-card-image-area">
+                                    <img src="images/bg1.jpg" alt="spain">
+                                </div>
+                                <div class="places-to-stay-card-detail-area">
+                                    <div class="places-to-stay-card-detail-rating-area">
+                                        <div class="sp">
+                                            <p>SUPERHOST</p>
+                                        </div>
+                                        <div class="places-to-stay-card-detail-country-area">
+                                            <p>Indonesia</p>
+                                        </div>
+                                        <div class="places-to-stay-card-detail-rated-number-area">
+                                            <p>5.0</p>
+                                        </div>
+                                    </div>
+                                    <div class="places-to-stay-card-detail-about-place-area">
+                                        <p>Lorem ipsum dolor sit amet.</p>
+                                    </div>
+                                    <div class="places-to-stay-card-detail-place-rent-area">
+                                        <p><span>$1399</span> / night</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="places-to-stay-inner-main-area-card">
+                        <a href="#">
+                            <div class="places-to-stay-cards-padding">
+                                <div class="places-to-stay-card-image-area">
+                                    <img src="images/bg2.jpg" alt="spain">
+                                </div>
+                                <div class="places-to-stay-card-detail-area">
+                                    <div class="places-to-stay-card-detail-rating-area">
+                                        <div class="sp">
+                                            <p>PLUS</p>
+                                        </div>
+                                        <div class="places-to-stay-card-detail-country-area">
+                                            <p>France</p>
+                                        </div>
+                                        <div class="places-to-stay-card-detail-rated-number-area">
+                                            <p>5.0</p>
+                                        </div>
+                                    </div>
+                                    <div class="places-to-stay-card-detail-about-place-area">
+                                        <p>Lorem ipsum dolor sit amet.</p>
+                                    </div>
+                                    <div class="places-to-stay-card-detail-place-rent-area">
+                                        <p><span>$1499</span> / night</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="places-to-stay-inner-main-area-card">
+                        <a href="#">
+                            <div class="places-to-stay-cards-padding">
+                                <div class="places-to-stay-card-image-area">
+                                    <img src="images/bg3.jpg" alt="spain">
+                                </div>
+                                <div class="places-to-stay-card-detail-area">
+                                    <div class="places-to-stay-card-detail-rating-area">
+                                        <div class="sp">
+                                            <p>PLUS</p>
+                                        </div>
+                                        <div class="places-to-stay-card-detail-country-area">
+                                            <p>Thiland</p>
+                                        </div>
+                                        <div class="places-to-stay-card-detail-rated-number-area">
+                                            <p>5.0</p>
+                                        </div>
+                                    </div>
+                                    <div class="places-to-stay-card-detail-about-place-area">
+                                        <p>Lorem ipsum dolor sit amet.</p>
+                                    </div>
+                                    <div class="places-to-stay-card-detail-place-rent-area">
+                                        <p><span>$1599</span> / night</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="places-to-stay-inner-main-area-card">
+                        <a href="#">
+                            <div class="places-to-stay-cards-padding">
+                                <div class="places-to-stay-card-image-area">
+                                    <img src="images/bg4.jpg" alt="spain">
+                                </div>
+                                <div class="places-to-stay-card-detail-area">
+                                    <div class="places-to-stay-card-detail-rating-area">
+                                        <div class="sp">
+                                            <p>SUPERHOST</p>
+                                        </div>
+                                        <div class="places-to-stay-card-detail-country-area">
+                                            <p>Greece</p>
+                                        </div>
+                                        <div class="places-to-stay-card-detail-rated-number-area">
+                                            <p>5.0</p>
+                                        </div>
+                                    </div>
+                                    <div class="places-to-stay-card-detail-about-place-area">
+                                        <p>Lorem ipsum dolor sit amet.</p>
+                                    </div>
+                                    <div class="places-to-stay-card-detail-place-rent-area">
+                                        <p><span>$1999</span> / night</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="places-to-stay-inner-main-area-card">
+                        <a href="#">
+                            <div class="places-to-stay-cards-padding">
+                                <div class="places-to-stay-card-image-area">
+                                    <img src="images/bg6.jpg" alt="spain">
+                                </div>
+                                <div class="places-to-stay-card-detail-area">
+                                    <div class="places-to-stay-card-detail-rating-area">
+                                        <div class="sp">
+                                            <p>PLUS</p>
+                                        </div>
+                                        <div class="places-to-stay-card-detail-country-area">
+                                            <p>United States</p>
+                                        </div>
+                                        <div class="places-to-stay-card-detail-rated-number-area">
+                                            <p>5.0</p>
+                                        </div>
+                                    </div>
+                                    <div class="places-to-stay-card-detail-about-place-area">
+                                        <p>Lorem ipsum dolor sit amet.</p>
+                                    </div>
+                                    <div class="places-to-stay-card-detail-place-rent-area">
+                                        <p><span>$2599</span> / night</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="places-to-stay-inner-main-area-card">
+                        <a href="#">
+                            <div class="places-to-stay-cards-padding">
+                                <div class="places-to-stay-card-image-area">
+                                    <img src="images/bg8.jpg" alt="spain">
+                                </div>
+                                <div class="places-to-stay-card-detail-area">
+                                    <div class="places-to-stay-card-detail-rating-area">
+                                        <div class="sp">
+                                            <p>SUPERHOST</p>
+                                        </div>
+                                        <div class="places-to-stay-card-detail-country-area">
+                                            <p>Spain</p>
+                                        </div>
+                                        <div class="places-to-stay-card-detail-rated-number-area">
+                                            <p>5.0</p>
+                                        </div>
+                                    </div>
+                                    <div class="places-to-stay-card-detail-about-place-area">
+                                        <p>Lorem ipsum dolor sit amet.</p>
+                                    </div>
+                                    <div class="places-to-stay-card-detail-place-rent-area">
+                                        <p><span>$1200</span> / night</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="places-to-stay-inner-main-area-card">
+                        <a href="#">
+                            <div class="places-to-stay-cards-padding">
+                                <div class="places-to-stay-card-image-area">
+                                    <img src="images/bg7.jpg" alt="spain">
+                                </div>
+                                <div class="places-to-stay-card-detail-area">
+                                    <div class="places-to-stay-card-detail-rating-area">
+                                        <div class="sp">
+                                            <p>PLUS</p>
+                                        </div>
+                                        <div class="places-to-stay-card-detail-country-area">
+                                            <p>Turkey</p>
+                                        </div>
+                                        <div class="places-to-stay-card-detail-rated-number-area">
+                                            <p>5.0</p>
+                                        </div>
+                                    </div>
+                                    <div class="places-to-stay-card-detail-about-place-area">
+                                        <p>Lorem ipsum dolor sit amet.</p>
+                                    </div>
+                                    <div class="places-to-stay-card-detail-place-rent-area">
+                                        <p><span>$1099</span> / night</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="places-to-stay-inner-main-area-card">
+                        <a href="#">
+                            <div class="places-to-stay-cards-padding">
+                                <div class="places-to-stay-card-image-area">
+                                    <img src="images/bg5.jpg" alt="spain">
+                                </div>
+                                <div class="places-to-stay-card-detail-area">
+                                    <div class="places-to-stay-card-detail-rating-area">
+                                        <div class="sp">
+                                            <p>SUPERHOST</p>
+                                        </div>
+                                        <div class="places-to-stay-card-detail-country-area">
+                                            <p>Australia</p>
+                                        </div>
+                                        <div class="places-to-stay-card-detail-rated-number-area">
+                                            <p>5.0</p>
+                                        </div>
+                                    </div>
+                                    <div class="places-to-stay-card-detail-about-place-area">
+                                        <p>Lorem ipsum dolor sit amet.</p>
+                                    </div>
+                                    <div class="places-to-stay-card-detail-place-rent-area">
+                                        <p><span>$1599</span> / night</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Top Destinations: This section suggests you some of our top destinations around the world for you best experience -->
+
+
+    <section id="top-destinations-section">
+        <div id="top-destinations-main-area">
+            <div class="top-destinations-heading">
+
+                <p>Popular destinations in the United States</p>
+
+            </div>
+            <div class="top-destinations-inner-main-area">
+                <div class="top-destinations-card">
+                    <a href="#">
+                        <div class="top-destinations-card-heading">
+                            <p>
+                                <strong>San Francisco</strong>
+                            </p>
+                        </div>
+                        <div class="top-destination-card-detail-rent">
+                            <p>$216/night average</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="top-destinations-card">
+                    <a href="#">
+                        <div class="top-destinations-card-heading">
+                            <p class="h-sub-secondary">
+                                <strong>Los Angeles</strong>
+                            </p>
+                        </div>
+                        <div class="top-destination-card-detail-rent">
+                            <p>$213/night average</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="top-destinations-card">
+                    <a href="#">
+                        <div class="top-destinations-card-heading">
+                            <p class="h-sub-secondary">
+                                <strong>New York</strong>
+                            </p>
+                        </div>
+                        <div class="top-destination-card-detail-rent">
+                            <p>$159/night average</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="top-destinations-card">
+                    <a href="#">
+                        <div class="top-destinations-card-heading">
+                            <p class="h-sub-secondary">
+                                <strong>Seattle</strong>
+                            </p>
+                        </div>
+                        <div class="top-destination-card-detail-rent">
+                            <p>$134/night average</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="top-destinations-card">
+                    <a href="#">
+                        <div class="top-destinations-card-heading">
+                            <p class="h-sub-secondary">
+                                <strong>Denver</strong>
+                            </p>
+                        </div>
+                        <div class="top-destination-card-detail-rent">
+                            <p>$128/night average</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="top-destinations-card">
+                    <a href="#">
+                        <div class="top-destinations-card-heading">
+                            <p class="h-sub-secondary">
+                                <strong>Washington DC</strong>
+                            </p>
+                        </div>
+                        <div class="top-destination-card-detail-rent">
+                            <p>$166/night average</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="top-destinations-card">
+                    <a href="#">
+                        <div class="top-destinations-card-heading">
+                            <p class="h-sub-secondary">
+                                <strong>Phoenix</strong>
+                            </p>
+                        </div>
+                        <div class="top-destination-card-detail-rent">
+                            <p>$232/night average</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="top-destinations-card">
+                    <a href="#">
+                        <div class="top-destinations-card-heading">
+                            <p class="h-sub-secondary">
+                                <strong>Austin</strong>
+                            </p>
+                        </div>
+                        <div class="top-destination-card-detail-rent">
+                            <p>$242/night average</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="top-destinations-card">
+                    <a href="#">
+                        <div class="top-destinations-card-heading">
+                            <p class="h-sub-secondary">
+                                <strong>Houston</strong>
+                            </p>
+                        </div>
+                        <div class="top-destination-card-detail-rent">
+                            <p>$351/night average</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="top-destinations-card">
+                    <a href="#">
+                        <div class="top-destinations-card-heading">
+                            <p class="h-sub-secondary">
+                                <strong>New Orleans</strong>
+                            </p>
+                        </div>
+                        <div class="top-destination-card-detail-rent">
+                            <p>$210/night average</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Featured Plus: this section suggests you some of our featured places for you to go -->
+    <section id="featured-plus-destinations-section">
+        <div id="featured-plus-main-area">
+            <div id="featured-plus-main-inner-area">
+                <div id="featured-plus-heading-section">
+                    <div class="featured-plus-heading-area">
+
+                        <p>Featured Airbnb Plus destinations</p>
+
+                    </div>
+                    <div class="featured-plus-heading-details">
+                        <p>Browse beautiful places to stay with all the comforts of home, plus more.</p>
+                    </div>
+                </div>
+
+                <div id="featured-plus-cards-area">
+                    <div class="featured-plus-card">
+                        <a href="#">
+                            <div class="featured-plus-card-anchor-start">
+                                <div class="featured-plus-card-image">
+                                    <img src="images/bg13.jpg" alt="featured plus destination" width="200px">
+                                </div>
+                                <div class="featured-plus-card-detail-area">
+                                    <div class="featured-plus-card-verified-stays">
+                                        <p>270+ VERIFIED STAYS</p>
+                                    </div>
+                                    <div class="featured-plus-card-place-detail">
+                                        <p>Take in soaring views and Edwardian details from Toronto places to stay verified for quality and design.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="featured-plus-card">
+                        <a href="#">
+                            <div class="featured-plus-card-anchor-start">
+                                <div class="featured-plus-card-image">
+                                    <img src="images/bg15.jpg" alt="featured plus destination" width="200px">
+                                </div>
+                                <div class="featured-plus-card-detail-area">
+                                    <div class="featured-plus-card-verified-stays">
+                                        <p>550+ VERIFIED STAYS</p>
+                                    </div>
+                                    <div class="featured-plus-card-place-detail">
+                                        <p>Browse Gothic apartments, spacious lofts and other verified places to stay in this city of boundless culture.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="featured-plus-card">
+                        <a href="#">
+                            <div class="featured-plus-card-anchor-start">
+                                <div class="featured-plus-card-image">
+                                    <img src="images/bg14.jpg" alt="featured plus destination" width="200px">
+                                </div>
+                                <div class="featured-plus-card-detail-area">
+                                    <div class="featured-plus-card-verified-stays">
+                                        <p>110+ VERIFIED STAYS</p>
+                                    </div>
+                                    <div class="featured-plus-card-place-detail">
+                                        <p>Explore London from secluded garden flats and luminous lofts – all verified for quality and design.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Footer section of this website starts here -->
+
+
+    <footer id="footer-section">
+
+        <div id="footer-section-main-area">
+            <div id="footer-section-main-inner-area">
+                <div id="footer-section-main-inner-area-list-area">
+
+
+                    <div class="footer-section-main-inner-area-list-section-card">
+                        <div class="footer-section-main-inner-area-list-section-card-heading">
+
+                            <p>ABOUT</p>
+
+                        </div>
+                        <div class="footer-section-main-inner-area-list-section-card-list-items">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <div class="footer-section-list-item">
+                                            <p>Diversity & Belonging</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="footer-section-list-item">
+                                            <p>Accessibility</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="footer-section-list-item">
+                                            <p>Trust & Safety</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="footer-section-list-item">
+                                            <p>HomeFarAway Citizen</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="footer-section-list-item">
+                                            <p>Newsroom</p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="footer-section-main-inner-area-list-section-card">
+                        <div class="footer-section-main-inner-area-list-section-card-heading">
+                            <p>COMMUNITY</p>
+
+                        </div>
+                        <div class="footer-section-main-inner-area-list-section-card-list-items">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <div class="footer-section-list-item">
+                                            <p>HomeFarAway Magazine</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="footer-section-list-item">
+                                            <p>HomeFarAway for Work</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="footer-section-list-item">
+                                            <p>Invite friends</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="footer-section-list-item">
+                                            <p>Careers</p>
+                                        </div>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="footer-section-main-inner-area-list-section-card">
+                        <div class="footer-section-main-inner-area-list-section-card-heading">
+
+                            <p>HOST</p>
+
+                        </div>
+                        <div class="footer-section-main-inner-area-list-section-card-list-items">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <div class="footer-section-list-item">
+                                            <p>Host your home</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="footer-section-list-item">
+                                            <p>Host an experience</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="footer-section-list-item">
+                                            <p>Responsible hosting</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="footer-section-list-item">
+                                            <p>Refer hosts</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="footer-section-list-item">
+                                            <p>Open Homes</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="footer-section-list-item">
+                                            <p>Olympics</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="footer-section-list-item">
+                                            <p>Resource Center</p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="footer-section-main-inner-area-list-section-card">
+                        <div class="footer-section-main-inner-area-list-section-card-heading">
+
+                            <p>SUPPORT</p>
+
+                        </div>
+                        <div class="footer-section-main-inner-area-list-section-card-list-items">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <div class="footer-section-list-item">
+                                            <p>Help Center</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="footer-section-list-item">
+                                            <p>Neighbourhood Support</p>
+                                        </div>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+                <div id="footer-section-main-inner-area-copyright-section">
+                    <div class="footer-section-main-inner-cpy-area-icon-section">
+                        <div class="footer-section-main-inner-cpy-area-currency-section">
+                            <ul>
+                                <li><a href="#">English (IN)</a></li>
+                                <li><a href="#">USD</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-section-main-inner-cpy-area-social-icons">
+                            <ul class="soc-icon">
+                                <li><a href="http://www.facebook.com/abhishek.sahore.92" target="_blank "><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#twitter"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="https://www.instagram.com/abhisheksahore7" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="#youtube"><i class="fa fa-youtube"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div id="footer-section-main-inner-company-rights-and-terms">
+                        <div id="footer-section-main-inner-company-and-rights">
+                            <div id="footer-section-main-inner-cpy-area-company">
+                                <p>&copy; 2020 HomeFarAway, Inc.</p>
+                            </div>
+                            <div id="footer-section-main-inner-cpy-area-rights">
+                                <p><span>&nbsp;</span> All rights reserved</p>
+                            </div>
+                        </div>
+                        <div id="footer-section-main-inner-company-terms">
+                            <ul>
+                                <li>
+                                    <div class="footer-section-companyterms"> <a href="#">Privacy</a></div>
+                                </li>
+                                <li>
+                                    <div class="footer-section-companyterms"><a href="#">Terms</a></div>
+                                </li>
+                                <li>
+                                    <div class="footer-section-companyterms"><a href="#">Sitemap</a></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>

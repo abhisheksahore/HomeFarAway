@@ -1,0 +1,884 @@
+/* CSS RESET */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Bree Serif', serif;
+    background-color: rgb(255, 255, 253);
+}
+
+
+/* ====================================
+=======NAVIGATION BAR STARTS HERE======
+==================================== */
+
+header {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+}
+
+#navbar {
+    display: flex;
+    /* border: 2px solid red; */
+    background-color: rgba(41, 39, 39, 0.2);
+    padding-bottom: 3px;
+}
+
+
+/* ====================================
+=======NAVIGATION BAR : Logo===========
+==================================== */
+
+#logo {
+    /* border: 2px solid blue; */
+    padding-left: 3vw;
+}
+
+#logo p {
+    font-size: 2rem;
+    font-weight: bolder;
+    font-family: 'Pacifico', cursive;
+    color: white;
+    text-shadow: 2px 2px 8px black;
+    margin: 0px 0px;
+}
+
+#logo p span {
+    font-size: 1.2em;
+}
+
+
+/* ====================================
+=======NAVIGATION BAR : MENU===========
+==================================== */
+
+#nav-menu {
+    /* border: 2px solid purple; */
+    flex-grow: 2;
+    margin: 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Baloo Bhai', cursive;
+}
+
+#nav-menu ul {
+    display: flex;
+}
+
+#nav-menu ul li {
+    list-style: none;
+    font-size: 1em;
+}
+
+#nav-menu ul li a {
+    padding: 22px 20px;
+    text-decoration: none;
+    /* background-color: hotpink; */
+    color: white;
+}
+
+#nav-menu ul li a:hover {
+    /* background-color: blue; */
+    color: black;
+}
+
+#nav-menu ul li a p {
+    text-align: center;
+}
+
+
+/* ====================================
+====NAVIGATION BAR : RIGHT SECTION=====
+==================================== */
+
+#nav-right {
+    display: flex;
+    /* border: 2px solid green; */
+    justify-content: center;
+    align-items: center;
+    margin: 0px 0px;
+}
+
+
+/* =================================================
+====NAVIGATION BAR: RIGHT SECTION: SOCIAL ICONS=====
+================================================= */
+
+#social-icons {
+    /* border: 2px solid black; */
+    margin-right: 10px;
+}
+
+#social-icons ul {
+    display: flex;
+    /* border: 2px solid black; */
+    padding: 0px
+}
+
+#social-icons ul li {
+    list-style: none;
+}
+
+#social-icons ul li a {
+    text-decoration: none;
+    /* background-color: red; */
+    padding: 22px 16px;
+}
+
+#social-icons ul li a:hover {
+    /* background-color: green; */
+}
+
+#social-icons ul li a .fa:hover {
+    color: black;
+    /* background-color: green; */
+}
+
+#social-icons ul li a .fa {
+    font-size: 1.4em;
+    color: white;
+}
+
+
+/* =====================================================
+====NAVIGATION BAR: RIGHT SECTION: LOGIN AND SIGNUP=====
+===================================================== */
+
+#logins {
+    /* border: 2px solid red; */
+    font-family: 'Baloo Bhai', cursive;
+}
+
+#logins ul {
+    display: flex;
+    padding: 0px;
+}
+
+#logins ul li {
+    list-style: none;
+}
+
+#logins ul li a {
+    text-decoration: none;
+    padding: 22px 18px;
+    color: white;
+    /* background-color: hotpink; */
+}
+
+#logins ul li a:hover {
+    /* background-color: blue; */
+    color: black;
+}
+
+
+/* ========================================================================
+===========================================================================
+===========================================================================
+============================= MAIN FORM SECTION ===========================
+===========================================================================
+===========================================================================
+======================================================================== */
+
+#home-form-section {
+    background: url("../images/bg11.jpg") center center/cover;
+    display: flex;
+    height: 100vh;
+    min-height: 800px;
+}
+
+#card {
+    /* border: 2px solid black; */
+    margin-top: 150px;
+    margin-left: 8vw;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 10px rgb(156, 156, 156);
+    border-radius: 4px;
+    padding: 5px 30px;
+    width: 435px;
+    height: 475px;
+}
+
+#form-heading {
+    font-size: 1.3em;
+    padding-right: 50px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    color: rgb(65, 63, 63);
+    /* border: 2px solid red; */
+    margin: 0px 0px;
+}
+
+#form-heading h1 {
+    margin: 23px 0px;
+}
+
+#form-body {
+    /* border: 2px solid black; */
+    font-size: .8em;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 600;
+}
+
+#form-body .home-form .label {
+    color: rgb(102, 101, 101);
+    margin-bottom: 8px;
+}
+
+#form-body .home-form .input input {
+    width: 100%;
+    height: 48px;
+    margin-bottom: 18px;
+    padding: 0px 10px;
+    font-size: 1.3em;
+    border-radius: 3px;
+    border: 1px solid rgb(231, 227, 227);
+}
+
+#form-body .home-form .input input:focus {
+    outline: none;
+    border-width: 1px;
+    border-color: rgb(153, 146, 146);
+}
+
+#form-body .home-form .input input::placeholder {
+    font-size: 1.05em;
+    color: rgb(155, 153, 153);
+}
+
+#form-body #same-line-form {
+    display: flex;
+    /* border: 2px solid green; */
+}
+
+#form-body #same-line-form .home-form .input input {
+    width: 100%;
+    margin-bottom: 18px;
+    padding: 0px 10px;
+    outline: none;
+    border-radius: 3px;
+}
+
+#form-body #same-line-form .home-form .input input:hover,
+#form-body #same-line-form .home-form .input input:focus {
+    outline: none;
+    border-width: 1px;
+}
+
+#form-body #same-line-form .home-form .input input::placeholder {
+    font-size: 1.05rem;
+    color: rgb(155, 153, 153);
+}
+
+#form-body #same-line-form .home-form {
+    width: 50%;
+    /* border: 2px solid red; */
+}
+
+#form-body #submit-button {
+    margin-top: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#form-body #submit-button button {
+    width: 28%;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 1.4em;
+    font-family: 'Baloo Bhai', cursive;
+    color: white;
+    background-color: rgb(255, 77, 77);
+    border-radius: 1px solid transparent;
+    outline: none;
+    cursor: pointer;
+    border-width: 0px;
+    border-style: outset;
+}
+
+#form-body #submit-button button:hover {
+    background-color: rgb(255, 52, 52);
+}
+
+#form-body #submit-button button:focus {
+    background-color: rgb(252, 38, 38);
+}
+
+
+/* =========================================================================
+============================= EXPLORE HOMEFARAWAY ==========================
+========================================================================= */
+
+#Explore-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#explore-section-main-area {
+    /* border: 2px solid black; */
+    width: 87vw;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 0px 5px;
+}
+
+#explore-section-main-inner-area {
+    margin-top: 15px;
+    margin-left: 10px
+}
+
+#explore-section-heading {
+    font-weight: bold;
+    font-family: 'Ubuntu';
+    font-size: 1.35em;
+}
+
+#explore-section-body {
+    width: 100%;
+    /* border: 2px solid green; */
+}
+
+#explore-section-body ul {
+    display: flex;
+    width: 100%;
+    /* border: 2px solid blue; */
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+#explore-section-body ul li {
+    list-style: none;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding-right: 18px;
+    width: 30%;
+}
+
+#explore-section-body ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+#explore-section-body ul li a:hover .explore-card {
+    box-shadow: 1px 1px 8px rgb(156, 156, 156);
+}
+
+.explore-card {
+    border-radius: 12px;
+    display: flex;
+    /* background-color: red; */
+    align-items: center;
+    box-shadow: 1px 1px 8px rgb(216, 211, 211);
+}
+
+.explore-card-image {
+    margin: 0px;
+    padding: 0px;
+}
+
+.explore-card .explore-card-image img {
+    border-bottom-left-radius: 12px;
+    border-top-left-radius: 12px;
+    width: 126px;
+    height: 84px;
+    margin: 0px;
+    object-fit: cover;
+    display: block;
+}
+
+.explore-card-title {
+    padding: 0px 25px;
+    font-size: 1em;
+    color: black;
+    font-family: 'Ubuntu';
+    font-weight: bold;
+}
+
+
+/* =========================================================================
+============================= PLACES TO STAY ===============================
+========================================================================= */
+
+#places-to-stay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid black; */
+}
+
+#places-to-stay-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 86vw;
+    margin-top: 40px;
+    margin-bottom: 25px;
+    /* border: 2px solid green; */
+}
+
+
+/* space for heading */
+
+#places-to-stay-heading-main {
+    /* border: 2px solid blue; */
+    width: 100%;
+    padding-left: 8px;
+}
+
+#places-to-stay-heading-inside a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.4em;
+    font-weight: bold;
+    font-family: 'Ubuntu';
+}
+
+
+/* #places-to-stay-heading-inside a p .fa {
+    visibility: hidden;
+    font-size: 15px;
+}
+
+#places-to-stay-heading-inside a p:hover .fa {
+    font-size: 15px;
+    visibility: visible;
+} */
+
+
+/* space for body of places to stay */
+
+#places-to-stay-main-cards-area {
+    width: 100%;
+}
+
+#places-to-stay-inner-main-card-area {
+    display: flex;
+    /* border: 2px solid red; */
+    flex-wrap: wrap;
+    width: 86vw;
+}
+
+.places-to-stay-inner-main-area-card {
+    display: block;
+    /* background-color: hotpink; */
+    /* border: 2px solid red; */
+    width: 25%;
+    height: auto;
+    padding: 8px;
+}
+
+.places-to-stay-inner-main-area-card a {
+    text-decoration: none;
+    color: black;
+}
+
+.places-to-stay-card-image-area img {
+    width: 100%;
+    display: block;
+    border-radius: 5px;
+}
+
+.places-to-stay-card-detail-rating-area {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 10px 0px;
+    margin-bottom: 5px;
+}
+
+.places-to-stay-card-detail-rating-area .sp {
+    border-radius: 3px;
+    border: 1px solid black;
+}
+
+.places-to-stay-inner-main-area-card a:hover .sp {
+    color: white;
+    border: 1px solid tomato;
+    background-color: tomato;
+}
+
+.places-to-stay-card-detail-rating-area .sp p {
+    margin: 0px;
+    margin-bottom: 1px;
+    padding: 0px 4px;
+    font-size: 0.8em;
+    font-family: 'Ubuntu';
+}
+
+.places-to-stay-card-detail-country-area {
+    flex-grow: 2;
+    width: 40%;
+}
+
+.places-to-stay-card-detail-country-area p {
+    margin: 0px;
+    padding: 0px 5px;
+    color: rgb(134, 134, 134);
+    font-family: 'Ubuntu';
+    font-size: 0.9em;
+}
+
+.places-to-stay-card-detail-rated-number-area p {
+    margin: 0px;
+    font-family: 'Ubuntu';
+    font-size: 0.9em;
+}
+
+.places-to-stay-card-detail-about-place-area p {
+    margin: 0px;
+    font-family: 'Ubuntu';
+    font-size: 1em;
+    color: rgb(92, 92, 92);
+}
+
+.places-to-stay-card-detail-place-rent-area p {
+    margin: 5px 0px;
+    color: rgb(92, 92, 92);
+}
+
+.places-to-stay-card-detail-place-rent-area p span {
+    color: black;
+    font-weight: bold;
+    font-family: 'Ubuntu';
+    font-size: 0.9em;
+}
+
+
+/* =========================================================================
+============================= TOP DESTINATIONS =============================
+========================================================================= */
+
+#top-destinations-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgb(216, 128, 128); */
+}
+
+#top-destinations-main-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* border: 2px solid black; */
+    margin-top: 40px;
+    margin-bottom: 25px;
+    width: 86vw;
+}
+
+.top-destinations-heading {
+    padding-left: 8px;
+    width: 100%;
+    /* border: 2px solid red; */
+}
+
+.top-destinations-heading p {
+    font-size: 1.4em;
+    font-family: 'Ubuntu';
+    font-weight: bold;
+}
+
+
+/* BODY OF THIS SECTION */
+
+.top-destinations-inner-main-area {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: hotpink; */
+}
+
+.top-destinations-card {
+    width: 20%;
+    padding: 5px;
+    /* background-color: greenyellow; */
+    /* border: 2px solid white; */
+}
+
+.top-destinations-card a {
+    color: black;
+    text-decoration: none;
+    font-family: 'Ubuntu';
+}
+
+.top-destinations-card-heading p {
+    margin-top: 12px;
+    margin-bottom: 8px;
+    font-size: 1.1em;
+}
+
+.top-destination-card-detail-rent p {
+    font-size: 0.9em;
+    margin: 5px 0px;
+    color: rgb(134, 134, 134);
+}
+
+
+/* =========================================================================
+========================= FEATURED PLUS DESTINATIONS =======================
+========================================================================= */
+
+#featured-plus-destinations-section {
+    display: flex;
+    /* background-color: hotpink; */
+    justify-content: center;
+    align-items: center;
+}
+
+#featured-plus-main-area {
+    width: 86vw;
+    /* background-color: white; */
+}
+
+#featured-plus-main-inner-area {
+    margin-top: 40px;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: greenyellow; */
+}
+
+#featured-plus-heading-section {
+    width: 100%;
+    padding-left: 8px;
+}
+
+.featured-plus-heading-area p {
+    font-size: 1.4em;
+    font-weight: bold;
+    font-family: 'Ubuntu';
+    margin-bottom: 10px;
+}
+
+.featured-plus-heading-details p {
+    font-family: 'Ubuntu';
+    font-size: 1em;
+    color: rgb(134, 134, 134);
+    margin-top: 5px;
+    margin-bottom: 24.4px;
+}
+
+
+/* BODY OF THIS SECTION STARTS HERE */
+
+#featured-plus-cards-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgb(252, 38, 38); */
+    width: 100%;
+}
+
+.featured-plus-card {
+    padding: 8px;
+    width: 33.33%;
+}
+
+.featured-plus-card-anchor-start {
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.featured-plus-card a:hover .featured-plus-card-anchor-start {
+    box-shadow: 1px 1px 10px rgb(238, 236, 236);
+}
+
+.featured-plus-card a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Ubuntu';
+}
+
+.featured-plus-card-image img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+.featured-plus-card-verified-stays p {
+    margin-bottom: 5px;
+    color: rgb(166, 52, 189);
+    font-size: 0.8em;
+    font-weight: 500;
+}
+
+.featured-plus-card-place-detail p {
+    margin-top: 0px;
+    font-size: 0.9em;
+    padding-right: 60px;
+    color: rgb(83, 83, 83);
+}
+
+
+/* =========================================================================
+============================== FOOTER STARTS HERE ==========================
+========================================================================= */
+
+#footer-section {
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgb(224, 221, 221);
+    /* background-color: teal; */
+}
+
+#footer-section-main-area {
+    /* background-color: tomato; */
+    width: 86vw;
+}
+
+#footer-section-main-inner-area {
+    margin-top: 40px;
+    /* background-color: violet; */
+    padding: 8px;
+    padding-bottom: 0px;
+}
+
+#footer-section-main-inner-area-list-area {
+    display: flex;
+    margin: 0vw 9vw;
+    /* background-color: yellowgreen; */
+}
+
+.footer-section-main-inner-area-list-section-card {
+    width: 25%;
+    /* border: 2px solid black; */
+    padding: 5px;
+}
+
+.footer-section-main-inner-area-list-section-card-heading p {
+    font-family: 'Ubuntu';
+    font-size: 0.8em;
+    color: rgb(54, 53, 53);
+    font-weight: 600;
+    margin: 20px 0px;
+}
+
+.footer-section-main-inner-area-list-section-card-list-items ul {
+    padding: 0px;
+}
+
+.footer-section-main-inner-area-list-section-card-list-items ul li {
+    list-style: none;
+    color: grey;
+}
+
+.footer-section-main-inner-area-list-section-card-list-items ul li a {
+    text-decoration: none;
+    font-family: 'Ubuntu';
+    font-size: 0.9em;
+    color: rgb(46, 45, 45);
+}
+
+.footer-section-list-item p {
+    margin: 17px 0px;
+}
+
+#footer-section-main-inner-area-copyright-section {
+    /* background-color: turquoise; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    margin: 0vw 9vw;
+    margin-top: 50px;
+    font-family: 'ubuntu';
+    font-size: 0.9em;
+    padding: 5px 0px;
+    border-top: 1px solid rgb(224, 221, 221);
+}
+
+
+/* footer Icon section starts here */
+
+.footer-section-main-inner-cpy-area-icon-section {
+    display: flex;
+    /* border: 1px solid white; */
+}
+
+#footer-section-main-inner-company-rights-and-terms {
+    display: flex;
+    /* border: 1px solid hotpink; */
+    flex-grow: 2;
+}
+
+.footer-section-main-inner-cpy-area-currency-section ul {
+    display: flex;
+    /* border: 1px solid red; */
+    padding-left: 0px;
+}
+
+.footer-section-main-inner-cpy-area-currency-section ul li {
+    list-style: none;
+}
+
+.footer-section-main-inner-cpy-area-currency-section ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 12px 12px;
+}
+
+.footer-section-main-inner-cpy-area-currency-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-section-main-inner-cpy-area-social-icons ul {
+    display: flex;
+    /* background-color: chocolate; */
+    padding: 0px 20px;
+}
+
+.footer-section-main-inner-cpy-area-social-icons ul li {
+    list-style: none;
+}
+
+.footer-section-main-inner-cpy-area-social-icons ul li a {
+    color: black;
+    padding: 12px 12px;
+}
+
+.footer-section-main-inner-cpy-area-social-icons ul li a .fa {
+    font-size: 1.4em;
+}
+
+.footer-section-main-inner-cpy-area-social-icons ul li a:hover .fa {
+    text-shadow: 1px 1px 8px rgb(82, 82, 82);
+}
+
+#footer-section-main-inner-company-and-rights {
+    display: flex;
+    /* border: 1px solid black; */
+    padding: 0px 4px;
+}
+
+#footer-section-main-inner-company-terms ul {
+    display: flex;
+    padding-left: 6px;
+}
+
+#footer-section-main-inner-company-terms ul li {
+    list-style: none;
+}
+
+.footer-section-companyterms a {
+    text-decoration: none;
+    color: black;
+    padding: 12px 8px;
+}
+
+.footer-section-companyterms a:hover {
+    text-decoration: underline;
+}
